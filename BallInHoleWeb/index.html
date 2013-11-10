@@ -7,33 +7,18 @@
 		<script src="movingBall.js"></script> 
 	</head>
     <body>
-        <!--<a id="fullscreenButton" class="fadable" href="javascript:onFullscreen(event);" style="display: none;"> … </a>-->
         <div class="container">
             <div class="top">
-                <b>00:00</b>
+                <div id="timer">0</div>
             </div>
-            <div class="middle">
+            <div id="middle" class="middle">
                 <canvas id="surface"></canvas>
             </div>
             <div class="bottom">
-                <button class="button"><b>Play</b></button>
-                <button class="button"><b>Pause</b></button>
-                <button class="button"><b>Stop</b></button>
+                <button class="button" id="button1" onclick="starttimer()" value="Play">Play</button>
+                <button class="button" id="button1" onclick="pausetimer()" value="Pause">Pause</button>
+                <button class="button" id="button1" onclick="resettimer()" value="Reset">Reset</button>
             </div>
-
-
-
-
-            <!--<div class="time">	<p >00:00</p>
-            </div>
-            <div class="spel">
-                <canvas id="surface" ></canvas>
-            </div>
-            <div class="buttons">
-    	        <button class="button"><b>Play</b></button>
-    	        <button class="button"><b>Pause</b></button>
-    	       	<button class="button"><b>Stop</b></button>
-        	</div> -->
         </div>
     </body>
 </html>
