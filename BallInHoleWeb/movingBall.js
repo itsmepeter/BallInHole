@@ -177,7 +177,6 @@ function onRenderUpdate(event) {
 			default:
 				xDelta = lastOrientation.gamma;
 				yDelta = lastOrientation.beta;
-				alert("onrenderUpdate");
 		}
 		
 		moveBall(xDelta, yDelta);
